@@ -1,0 +1,66 @@
+
+.l-containner{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 2rem 3rem 3rem;
+  place-items: center;
+  background: rgb(100,100,100);
+  background: linear-gradient(0deg, rgba(100,100,100,1) 0%, rgba(165,165,165,1) 54%, rgba(173,173,173,1) 100%);
+}
+.c-main{
+  max-width: 1050px;
+  display: flex;
+  align-items: center;
+
+}
+
+.c-main__titulo{
+  font-family: 'Righteous', cursive;
+  font-size: 5rem;
+  font-weight: 500;
+}
+.c-main__descricao{
+  max-width: 1050px;
+  color: rgba(17, 17, 17, 0.65);
+  font-weight: 500;
+  text-align: justify;
+}
+
+.c-main__content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  
+}
+.c-main__icones{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.c-main__imagem{
+ width: 50%;
+}
+.c-main__img{
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1050px) {
+  .l-containner{
+    height: 100%;
+  }
+  .c-main{
+    flex-wrap: wrap; 
+    gap: 2rem;
+  }
+  .c-main__imagem{
+    width: 100%;
+   }
+   .c-main__titulo{
+    text-align: center;
+    margin:  1rem 0 1rem 0;
+    font-size: 3.44rem;
+   }
+}
